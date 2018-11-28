@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import CatalogPage from './components/catalog-page';
 
-class CatalogSection extends React.Component {
+class CatalogSection extends Component {
   render() {
     return (
       <CatalogPage />
@@ -11,7 +11,4 @@ class CatalogSection extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <CatalogSection />,
-  document.getElementById('root')
-);
+export default CatalogSection;
